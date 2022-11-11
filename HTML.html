@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>HTML 참고</title>
+        <meta charset="urf-8">
+    </head>
+    <body>
+        <h1><a href="https://www.codingfactory.net">HTML 참고 사이트</a></h1>
+    <ul>
+        <li>
+            <strong>제목</strong>
+            <ol>
+                <li>제목은 h1,h2,h3,h4,h5,h6 태그로 만든다.</li><li>문서의 구조와 밀접한 관련이 있으므로 순서에 맞게 사용하는 게 좋다.</li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>문단</strong>
+            <ol>
+            <li>문단(paragraph)은 p 태그로 만든다.</li>
+            <li>문단과 문단 사이는 간격이 크다.</li><li>문단 내에서 줄바꿈을 하고 싶다면 br 태그를 이용한다.</li>    
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>순서 있는 목록 - ol</strong>
+            <ol>
+                <li>순서 있는 목록(Ordered List)은 1,2,3 처럼 차례대로 증가하는 번호가 붙는 목록이다.<br>순서 있는 목록은 ol로, 목록의 내용은 li로 만든다.</li>
+                <li>시작하는 번호를 지정하려면 start 속성을 추가한다. (ex: ol start="5")</li>
+                <li>특정 목록의 번호를 지정하려면 value 속성을 추가한다. (ex: li value="9")</li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>순서 없는 목록 - ul</strong>
+            <ol>
+                <li>순서 없는 목록(Unorderd List)은 번호 대신 점이나 사각형 등의 도형이 목록 앞에 붙는다.<br>순서 없는 목록은 ul로, 목록의 내용은 li로 만든다.</li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>정의 목록 - dl</strong>
+            <ol>
+                <li>정의 목록(Definition List)은 용어와 그 뜻을 나열할 때 사용한다. <br>정의 목록은 dl로, 용어는 dt로, 그 뜻은 dd로 만든다.</li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>인용 - q, blockquote</strong>
+            <ol>
+                <li>q 요소의 기본 모양은 인용 문구를 큰 따옴표로 감싸는 것이다.</li><br>
+                <q cite="https://www.codingfactory.net">인용의 출처는 cite 속성으로 나타낸다. cite 속성 입력은 선택 사항이고, 웹브라우저에서는 보이지 않는다.</q>
+                <li>blockquote 요소의 기본 모양은 양쪽에 여백이 있는 것이다.
+                <blockquote>
+                    <p>ex) 이렇게 여백이 생긴다.</p>
+                </blockquote></li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>강조하는 텍스트, 중요한 텍스트</strong>
+            <ol>
+                <li>em 태그는 강조하는 텍스트에 사용한다. 기본 모양은 기울임꼴이다.<em> ex) 이렇게</em>
+                </li>
+                <li>strong 태그는 중요한 텍스트에 사용한다. 기본 모양은 굵은 글자이다.
+                <strong> ex) 이렇게</strong>
+                </li>
+                <li>b 태그는 글자를 굵게 만든다. 의미 부여 없이 굵게 만든다는 것이 strong과의 차이점이다.
+                <b> ex) 이렇게</b>
+                </li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>입력한 그대로 출력하는 태그</strong>
+            <ol>
+                <li><q><strong>pre</strong></q></li>
+                <li>HTML은 연속한 여러 개의 빈칸이나 탭, 줄바꿈을 하나의 빈칸으로 인식한다. </li>
+                <li>
+                    <pre> ex) 만약 입력한 그대로 출력되도록    하려면 pre 
+                        태그를 이용한다. 기본 글꼴은      고정폭 글꼴이다.</pre>
+                </li>
+                <li>pre 태그를 이용하면 문장이 길 경우 줄바꿈이 되지 않고 영역 바깥으로 나간다. 만약 영역 끝에서 자동 줄바꿈이 되도록 하려면 style에 word-wrap: break-word;를 추가한다.</li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>링크(link) 만들기</strong>
+            <ol>
+                <li>
+                    href 속성의 값에는 웹페이지, 이미지, 동영상, 파일 등의 주소를 넣는다. 웹페이지로 이동하거나, 동영상 플레이어가 실행되거나, 파일이 다운로드 되는 등 웹브라우저의 설정에 따라 처리된다.
+                </li>
+                <li>
+                    Ex) (a href="">Label(/a)
+                    <br> 위처럼 href 속성에 값이 없으면, 현재 페이지로 이동하는 링크가 만들어진다.
+                </li>
+                <li>
+                    a 태그에 추가할 수 있는 속성은 여러가지가 있다. 자주 사용되는 주요 속성은 다음과 같다.
+                </li>
+                    <ol>
+                        <li>target</li>
+                            <ul>
+                                <li>_self: 기본값으로 현재 페이지에서 링크를 처리한다.</li>
+                                <li>_blank: 새 창 또는 새 탭에서 링크를 처리한다.
+                                </li>
+                                <li>_parent,_top: 웹페이지를 frameset으로 구성했을 때 사용한다.</li>
+                            </ul><br>
+                        <li>download</li>
+                            <ul>
+                                <li>download를 추가하면, 웹브라우저의 설정에 상관없이 링크 대상을 다운로드 한다.
+                                </li>
+                                <li>Ex) (a href="image.jpg")Go(/a) 는 파일을 웹브라우저에 보여주지만</li>
+                                <li>Ex) (a href="images/image.jpg" download)Go(/a) 는 파일을 다운로드 한다.</li>
+                            </ul><br>
+                        <li>문서 내 특정 위치로의 링크</li>
+                        <ul>
+                            <li>href 속성의 값 앞에 #을 붙이면, 해당 id를 가진 요소로 이동한다.
+                            </li>
+                            <li>
+                                Ex) (a href="#result")Go to result.(/a) 는 id 속성의 값으로 result를 갖는 요소로 이동한다. 만약 현재 문서가 아니라면, 예를 들어 a.html 문서 내에 있는 요소라면 다음과 같이 만든다.<br>Ex) (a href="a.html#result")Go to result.(/a)
+                            </li>
+                        </ul>
+                    </ol>
+            </ol>
+        </li>        
+        <p></p>
+        <li>
+        <strong>표 만들 때 사용하는 태그</strong>
+            <ol>
+                <li>표는 table 태그로 만든다.</li>
+                <li>행은 tr 태그로 만든다.</li>
+                <li>열의 제목이 들어가는 셀은 th 태그로 만든다.</li>
+                <li>내용이 들어가는 셀은 td 태그로 만든다.</li>
+                <li>각 열의 의미에 따라 thead, tbody, tfoot 태그로 구분 지을 수도 있다.</li>
+                <li>가로로 이웃한 셀을 합칠 때에는 colspan 속성을 사용한다.</li>
+                <li>세로로 이웃한 셀을 합칠 때에는 rowspan 속성을 사용한다.</li>
+                <li>표 제목은 caption 태그로 만든다.</li>
+            </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>표에 캡션 붙이는 태그</strong>
+                <ol>
+                    <li>표에 캡션 붙일 때 caption 태그를 사용한다.</li>
+                    <li>기본 위치는 표 위 가운데</li>
+                    <li>캡션 위치는 CSS의 caption-side로 정한다.</li>
+                </ol>
+        </li>
+        <p></p>
+        <li>
+            <strong>이미지 삽입하는 태그</strong>
+                <ul>
+                    <li>src: 이미지의 경로</li>
+                    <li>alt: 이미지를 표시할 수 없을 때 출력할 내용</li>
+                    <li>width: 이미지의 가로 크기</li>
+                    <li>height: 이미지의 세로 크기</li>
+                    <li>loading: 이미지 로딩 방식</li><br>
+                    <li>width, height 속성을 정하지 않으면 이미지 원본 크기 그대로 나온다.</li>
+                    <li>만약 지정한 경로에 이미지가 없다면 alt 속성에 있는 값이 출력된다.</li>
+                    <li>width(height) 속성으로 가로(세로) 크기만 정하면 세로(가로) 크기는 원본의 가로 세로 비율에 맞게 정해진다.</li><br>
+                    <li>loading 속성을 이용하여 이미지를 불러오는 방식을 정할 수 있다.</li>
+                    <li>기본값은 eager로, 모든 이미지를 불러온다.</li>
+                    <li>lazy로 설정하면 이미지가 뷰포트의 일정 거리 안으로 들어오면 불러온다. 불필요한 이미지 로딩을 줄여서 페이지 속도를 증가시킬 수 있다.</li>
+                </ul>
+        </li>
+    </ul>
+    <p>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-cutkokud8v.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+    </p>
+    </body>
+</html>
